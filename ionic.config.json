@@ -1,0 +1,7 @@
+{
+  "name": "famflavor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
