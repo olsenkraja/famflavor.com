@@ -1,12 +1,8 @@
-<script setup lang="ts">
-import { actionSheetController } from '@ionic/vue'
-import type { UserPhoto } from '~/composables/usePhotoGallery'
+<script lang="ts" setup>
+import {actionSheetController} from '@ionic/vue'
+import type {UserPhoto} from '~/composables/usePhotoGallery'
 
-useHead({
-  title: 'Tab 2 - Photos',
-})
-
-const { photos, takePhoto, deletePhoto } = usePhotoGallery()
+const {photos, takePhoto, deletePhoto} = usePhotoGallery()
 
 const showActionSheet = async (photo: UserPhoto) => {
   const actionSheet = await actionSheetController.create({
@@ -35,44 +31,30 @@ const showActionSheet = async (photo: UserPhoto) => {
 </script>
 
 <template>
-  <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Photo Gallery</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">
-            Photo Gallery
-          </ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <ion-grid>
-        <ion-row>
-          <ion-col
-            v-for="photo in photos"
-            :key="photo.filepath"
-            size="6"
-          >
-            <ion-img
-              :src="photo.webviewPath"
-              @click="showActionSheet(photo)"
-            />
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+  <div>
+    <IonGrid>
+      <IonRow>
+        <IonCol
+          v-for="photo in photos"
+          :key="photo.filepath"
+          size="6"
+        >
+          <IonImg
+            :src="photo.webviewPath"
+            @click="showActionSheet(photo)"
+          />
+        </IonCol>
+      </IonRow>
+    </IonGrid>
 
-      <ion-fab
-        slot="fixed"
-        vertical="bottom"
-        horizontal="center"
-      >
-        <ion-fab-button @click="takePhoto()">
-          <ion-icon :icon="ioniconsCamera" />
-        </ion-fab-button>
-      </ion-fab>
-    </ion-content>
-  </ion-page>
+    <IonFab
+      slot="fixed"
+      horizontal="center"
+      vertical="bottom"
+    >
+      <IonFabButton @click="takePhoto()">
+        <IonIcon :icon="ioniconsCamera" />
+      </IonFabButton>
+    </IonFab>
+  </div>
 </template>

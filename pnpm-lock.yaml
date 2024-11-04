@@ -30,6 +30,12 @@ importers:
       '@capacitor/preferences':
         specifier: 6.0.2
         version: 6.0.2(@capacitor/core@6.1.2)
+      '@ionic/vue':
+        specifier: ^8.3.4
+        version: 8.3.4
+      '@ionic/vue-router':
+        specifier: ^8.3.4
+        version: 8.3.4
       '@nuxtjs/ionic':
         specifier: latest
         version: 0.15.1(magicast@0.3.5)(rollup@4.24.3)(vue@3.5.12(typescript@5.6.3))
@@ -680,9 +686,6 @@ packages:
     engines: {node: '>=16.0.0'}
     hasBin: true
 
-  '@ionic/core@8.3.3':
-    resolution: {integrity: sha512-f2PXV0jFIFPdjP+NbmQ1mXqRQ4KWi0U0jdQd3wDYsJFWQLmWXhW7Yp/4lCDdl0ouMeZRB2phddqFct1c7H6PyA==}
-
   '@ionic/core@8.3.4':
     resolution: {integrity: sha512-MkgaQ9+oQwj3AK/i25MkLgKUUH3/nvNjd4YlmUyFjPG7l2IBHsrLlSmuFGCyniB+doI9Hynu3T9CZP7NS4RjRQ==}
 
@@ -746,11 +749,8 @@ packages:
     resolution: {integrity: sha512-3cKScz9Jx2/Pr9ijj1OzGlBDfcmx7OMVBt4+P1uRR0SSW4cm1/y3Mo4OY3lfkuaYifMNBW8Wz6lQHbs1bihr7A==}
     engines: {node: '>=16.0.0'}
 
-  '@ionic/vue-router@8.3.3':
-    resolution: {integrity: sha512-5713NT0fLAHO0IVHYvdRQ8kROL5XmS3IWjqNABvUTw22omklUxo47egYyS1aWwQvdAaQ823uNwKxqsHIcwPCsw==}
-
-  '@ionic/vue@8.3.3':
-    resolution: {integrity: sha512-6EAPWdmQDvazP4ZsCRjWlG91Kx+1vYxX1gHx02Xvcc7Dn8hRrMW58IAAQ0BqSYsrHNFTKVtwD3cJbmnut8Ghyg==}
+  '@ionic/vue-router@8.3.4':
+    resolution: {integrity: sha512-TpRk1KtxZ0Rfxz5Jh4xFY2fBbluS6GuZg7vEKV1s3j+q7tMmzgopnhUeYK6jJDG6iGWj+VCLWWZO0wpO2+uOtA==}
 
   '@ionic/vue@8.3.4':
     resolution: {integrity: sha512-s7P5mTd078CbPK2dpIxxWGNirQacG3sXhJulJ1L0J6+6VI+HHHLKy4ueTRgPl5GLDmjGgdMCBuYu1n4K2nNXFg==}
@@ -4473,12 +4473,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ionic/core@8.3.3':
-    dependencies:
-      '@stencil/core': 4.20.0
-      ionicons: 7.4.0
-      tslib: 2.8.0
-
   '@ionic/core@8.3.4':
     dependencies:
       '@stencil/core': 4.20.0
@@ -4628,14 +4622,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ionic/vue-router@8.3.3':
+  '@ionic/vue-router@8.3.4':
     dependencies:
-      '@ionic/vue': 8.3.3
-
-  '@ionic/vue@8.3.3':
-    dependencies:
-      '@ionic/core': 8.3.3
-      ionicons: 7.4.0
+      '@ionic/vue': 8.3.4
 
   '@ionic/vue@8.3.4':
     dependencies:
@@ -4981,7 +4970,7 @@ snapshots:
       '@capacitor/core': 6.1.2
       '@ionic/cli': 7.2.0
       '@ionic/vue': 8.3.4
-      '@ionic/vue-router': 8.3.3
+      '@ionic/vue-router': 8.3.4
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.24.3)
       '@unhead/vue': 1.11.10(vue@3.5.12(typescript@5.6.3))
       ionicons: 7.4.0
