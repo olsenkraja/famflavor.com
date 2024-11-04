@@ -18,6 +18,7 @@
     "@ionic/vue": "^8.3.4",
     "@ionic/vue-router": "^8.3.4",
     "@nuxtjs/ionic": "latest",
+    "@tailwindcss/forms": "^0.5.9",
     "autoprefixer": "^10.4.20",
     "nuxt": "3.12.4",
     "postcss": "^8.4.47",
